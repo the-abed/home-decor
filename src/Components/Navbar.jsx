@@ -3,7 +3,7 @@ import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100 shadow-sm ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,20 +19,20 @@ const Navbar = () => {
       <li><NavLink to="/wishlist">Wishlist </NavLink></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-2xl">Home Decor</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center ">
     
   </div>
   <div className="navbar-end">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 font-semibold hidden lg:flex">
       <li><NavLink to="/">Home</NavLink></li>
       <li>
         <NavLink to="/product">Product </NavLink>
       </li>
       <li><NavLink to="/wishlist">Wishlist </NavLink></li>
     </ul>
-    <a className="btn">Button</a>
+    <a className="btn">Visit Shop</a>
   </div>
 </div>
     );
