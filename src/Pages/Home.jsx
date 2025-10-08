@@ -3,6 +3,7 @@ import Product from './Product';
 import useProducts from '../Hooks/useProducs';
 import ProductCard from '../Components/ProductCard';
 import { Link } from 'react-router';
+import LoaderSpinner from '../Components/LoaderSpinner';
 
 const Home = () => {
      const {products,loading} = useProducts();
@@ -14,12 +15,16 @@ const Home = () => {
                 <h1 className='font-semibold text-xl'>Featured Products</h1>
                 <button className='btn'><Link to="/product">See All Products</Link></button>
             </div>
-           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+          {
+            loading ? (<LoaderSpinner></LoaderSpinner>) : (
+                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
             
              {
                 filterProducts.map(product => <ProductCard key={product.id} product={product}></ProductCard>)
             }
            </div>
+            )
+          }
         </div>
     );
 };
