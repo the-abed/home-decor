@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import logo from "../../public/home-decor-logo.jpeg"
 
 const Navbar = () => {
     return (
@@ -19,6 +20,7 @@ const Navbar = () => {
       <li><NavLink to="/wishlist">Wishlist </NavLink></li>
       </ul>
     </div>
+    <img width={40} height={50} src={logo} alt="" />
     <a className="btn btn-ghost text-2xl">Home Decor</a>
   </div>
   <div className="navbar-center ">
