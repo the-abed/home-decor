@@ -121,7 +121,7 @@ This project was built for:
 **Mohammad Abed**
 Junior MERN Stack Developer
 
-GitHub: [https://github.com/the-abed]
+GitHub: [https://github.com/the-abed](github)
 
 
 ---
